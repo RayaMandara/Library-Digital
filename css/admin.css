@@ -1,0 +1,154 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4b4bff;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 30px 0 15px;
+  font-size: 18px;
+  color: #444;
+  border-left: 5px solid #4b4bff;
+  padding-left: 10px;
+}
+
+/* Form Tambah */
+.form-tambah {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form-tambah input,
+.form-tambah select {
+  flex: 1 1 calc(25% - 12px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.form-tambah input:focus,
+.form-tambah select:focus {
+  border-color: #4b4bff;
+  outline: none;
+}
+
+.btn-tambah {
+  background: #4b4bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.btn-tambah:hover {
+  background: #3a3ad9;
+}
+
+/* Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+table thead {
+  background: #4b4bff;
+  color: #fff;
+}
+
+table th, table td {
+  padding: 10px 12px;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f1f4ff;
+}
+th {
+  color: #000;
+}
+/* Tombol edit & hapus */
+a.btn-edit,
+a.btn-hapus {
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 0 3px;
+}
+
+a.btn-edit {
+  background: #4b4bff;
+  color: #fff;
+}
+
+a.btn-edit:hover {
+  background: #3a3ad9;
+}
+
+a.btn-hapus {
+  background: #e57373;
+  color: #fff;
+}
+
+a.btn-hapus:hover {
+  background: #c62828;
+}
+
+/* Pesan Notifikasi */
+p {
+  margin-bottom: 15px;
+}
+
+/* Tombol Logout */
+.back a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.back a:hover {
+  background: rgb(137, 9, 9);
+}

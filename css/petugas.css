@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Body dan Container === */
+body {
+    background: #f9f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1300px; /* diperlebar biar tabel lega */
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #444;
+}
+
+/* === Form tambah buku (dengan label sejajar) === */
+.form-tambah {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 15px 20px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.form-tambah label {
+    font-weight: 600;
+    color: #444;
+    text-align: right;
+}
+
+.form-tambah input,
+.form-tambah select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.form-tambah input:focus,
+.form-tambah select:focus {
+    border-color: #3f72af;
+    box-shadow: 0 0 5px rgba(63, 114, 175, 0.3);
+}
+
+.form-tambah input[type="file"] {
+    background: #fafafa;
+    padding: 8px;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+.form-tambah button {
+    grid-column: span 2;
+    background: #3f72af;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-tambah button:hover {
+    background: #2c5d8a;
+}
+
+
+/* === Tabel buku & peminjaman === */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: auto;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+    background: #3f72af;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background: #f7f9fc;
+}
+table tr:hover {
+    background: #eef5ff;
+}
+
+/* === Gambar cover seragam === */
+table img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Lebar khusus tabel buku */
+table th:nth-child(1), 
+table td:nth-child(1) { width: 120px; } /* Cover */
+table th:nth-child(2), 
+table td:nth-child(2) { width: 250px; } /* Judul */
+table th:nth-child(3), 
+table td:nth-child(3) { width: 150px; } /* Penulis */
+table th:nth-child(4), 
+table td:nth-child(4) { width: 120px; } /* Tahun */
+table th:nth-child(5), 
+table td:nth-child(5) { width: 180px; } /* Aksi */
+
+/* Lebar khusus tabel peminjaman */
+th:last-child,
+td:last-child {
+    width: 220px;
+}
+
+.aksi-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;       
+    flex-wrap: nowrap; 
+}
+
+.aksi-btn a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/* === Aksi Edit & Hapus === */
+.btn-edit {
+    background: #1f5fae;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-edit:hover {
+    background: #104382;
+}
+
+.btn-hapus {
+    background: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-hapus:hover {
+    background: #b02a37;
+}
+
+
+/* === Tombol Terima & Tolak === */
+td a[href*="terima"] {
+    background: #1f5fae;
+    color: #fff;
+}
+td a[href*="terima"]:hover {
+    background: #104382;
+}
+
+td a[href*="tolak"] {
+    background: #dc3545;
+    color: #fff;
+}
+td a[href*="tolak"]:hover {
+    background: #b02a37;
+}
+
+/* === Tombol selesai === */
+td a[href*="selesai"] {
+    background: #198754;
+    color: #fff;
+}
+td a[href*="selesai"]:hover {
+    background: #0f5132;
+}
+
+/* === Tombol disabled (bukan pending) === */
+td a.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* === Tombol Logout === */
+.back a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s;
+    font-weight: bold;
+}
+
+.back a:hover {
+    background: rgb(137, 9, 9);
+}
+
+/* === Link ubah password === */
+.ubah-password {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #3f88e2;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.ubah-password:hover {
+    transition: 0.3s;
+    color: rgb(204, 204, 204);
+    background-color: #306bb3;
+}

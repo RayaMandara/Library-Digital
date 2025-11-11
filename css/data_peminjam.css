@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3f72af;
+    border-bottom: 3px solid #3f72af;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.back-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #007bff;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.back-link:hover {
+    color: rgb(168, 168, 168);
+    background-color: #0359b6;
+}
+
+/* --- Table Styling --- */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #3f72af;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+td {
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+    text-align: center;
+
+    /* Batasi teks jadi 1 baris */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* --- Status Tags --- */
+.status-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.status-pending {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.status-dipinjam {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.status-selesai {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.status-ditolak {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* --- Action Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 3px 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-terima {
+    background: #4CAF50;
+}
+.btn-terima:hover {
+    background: #45a049;
+}
+
+.btn-tolak {
+    background: #f44336;
+}
+.btn-tolak:hover {
+    background: #da190b;
+}
+
+.btn-selesai {
+    background: #2196F3;
+}
+.btn-selesai:hover {
+    background: #0b7dda;
+}
+
+.btn-cetak {
+    background: #28a745;
+    margin-top: 8px;
+}
+.btn-cetak:hover {
+    background: #18722d;
+}
+
+.btn-processed {
+    color: #777;
+    font-style: italic;
+    font-size: 0.9em;
+}
+

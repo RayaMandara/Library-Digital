@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6ff;
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+.container {
+  width: 500px;
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h2 {
+  color: #2a64d6;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* biar input & button center */
+  gap: 20px;
+}
+
+form input,
+form button {
+  width: 100%;        /* biar penuh ke container */
+  max-width: 400px;   /* batasi supaya sejajar */
+}
+
+form input {
+  padding: 16px;
+  border: 1px solid #c9d6f5;
+  border-radius: 10px;
+  background: #eaf0ff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-color: #2a64d6;
+  outline: none;
+}
+
+button {
+  background: #2a64d6;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e4fb5;
+}
+
+.back {
+  display: block;
+  margin-top: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #2a64d6;
+}
+
+.back:hover {
+  text-decoration: underline;
+}

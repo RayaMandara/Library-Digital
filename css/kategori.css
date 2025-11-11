@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  line-height: 1.6;
+  overflow-y: scroll; 
+  padding-top: 100px;
+}
+
+/* Container utama */
+.collection-section {
+  padding: 120px 20px;
+}
+
+.collection-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.collection-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003ff8;
+}
+
+.collection-desc {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #003ff8;
+}
+
+/* Grid item */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card kategori */
+.collection-item {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Background khusus */
+.collection-item.fiksi {
+  background-image: url("../img/fiksi.png");
+}
+
+.collection-item.fantasy {
+  background-image: url("../img/fantasy.png");
+}
+
+.collection-item.sejarah{
+  background-image: url("../img/sejarah.jpg");
+}
+
+.collection-item.bisnis{
+  background-image: url("../img/bisnis.jpg");
+}
+
+
+.collection-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.collection-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+
+.collection-item p {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* Link kembali */
+.center-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.center-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #003ff8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.center-link a:hover {
+  background: #003ef8c6;
+}
